@@ -7,16 +7,22 @@
     <title>Freeby</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
     <header class="header">
         <div class="container header-pages">
             <a class="header-logo" href="./index.html"><span>logo</a>
             <ul class="pages-list">
-                <li class="pages-link"><a href="./index.html">Home</a></li>
-                <li class="pages-link"><a href="#">About Us</a></li>
-                <li class="pages-link"><a href="#">Services</a></li>
-                <li class="pages-link"><a href="#">Blogs</a></li>
+                <li class="pages-item"><a class="pages-link" href="./index.html">Home</a></li>
+                <li class="pages-item"><a class="pages-link" href="#">About Us</a></li>
+                <li class="pages-item"><a class="pages-link" href="#">Services</a></li>
+                <li class="pages-item"><a class="pages-link" href="#">Blogs</a></li>
             </ul>
             <button class="header-button">Gift Finder</button>
         </div>
@@ -24,22 +30,36 @@
 
     <main>
         <section class="hero-top">
-            <div class="container">
+            <div class="container hero-container">
                 <div class="content-top-left">
                     <h1 class="hero-title">Find a gift for your wife or girlfriend</h1>
                     <p class="hero-top-description">Struggling to find a gift for your wife or girlfriend? No problem!</p>
                     <button class="hero-top-button">Find gift now</button>
                 </div>
                 <div class="content-top-right">
-                    <img class="hero-top-img" src="./images/hero-top.jpg" alt="couple" width="719px" height="700px">
+                    <img 
+                    class="hero-top-img" 
+                    srcset="./images/hero-top-1x.jpg 1x, ./images/hero-top-2x.jpg 2x" 
+                    src="./images/hero-top-1x.jpg" 
+                    alt="couple" 
+                    width="719px" 
+                    height="700px"
+                    loading="lazy">
                 </div>
             </div>
         </section>
 
         <section class="hero-bottom">
-            <div class="container">
+            <div class="container hero-container">
                 <div class="content-bottom-left">
-                    <img class="hero-bottom-img" src="./images/hero-bottom.jpg" alt="postcard" width="721px" height="600px">
+                    <img 
+                    class="hero-bottom-img" 
+                    srcset="./images/hero-bottom-1x.jpg 1x, ./images/hero-bottom-2x.jpg 2x" 
+                    src="./images/hero-bottom-1x.jpg"  
+                    alt="postcard" 
+                    width="721px" 
+                    height="600px"
+                    loading="lazy">
                 </div>
                 <div class="content-bottom-right">
                     <h2 class="hero-bottom-title">How we work</h2>
@@ -57,8 +77,15 @@
                     <li class="gifts-item">
                         <a class="gifts-link" href="#">
                             <div class="thumb">
-                                <img class="thumb-img" src="./images/gift-1.jpg" alt="birthday" width="270px" height="270px">
-                                <p class="overlay"></p>
+                                <img 
+                                class="thumb-img" 
+                                srcset="./images/gift-1-1x.jpg 1x, ./images/gift-1-2x.jpg 2x"
+                                src="./images/gift-1-1x.jpg" 
+                                alt="birthday" 
+                                width="270px" 
+                                height="270px"
+                                loading="lazy">
+                                <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                             <div class="card-description">
                                 <h3 class="card-title">Birthday</h3>
@@ -69,8 +96,15 @@
                     <li class="gifts-item">
                         <a class="gifts-link" href="#">
                             <div class="thumb">
-                                <img class="thumb-img" src="./images/gift-2.jpg" alt="anniversary" width="270px" height="270px">
-                                <p class="overlay"></p>
+                                <img 
+                                class="thumb-img" 
+                                srcset="./images/gift-2-1x.jpg 1x, ./images/gift-2-2x.jpg 2x"
+                                src="./images/gift-2-1x.jpg" 
+                                alt="anniversary" 
+                                width="270px" 
+                                height="270px"
+                                loading="lazy">
+                                <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                             <div class="card-description">
                                 <h3 class="card-title">Anniversary</h3>
@@ -81,8 +115,15 @@
                     <li class="gifts-item">
                         <a class="gifts-link" href="#">
                             <div class="thumb">
-                                <img class="thumb-img" src="./images/gift-3.jpg" alt="valentine's Day" width="270px" height="270px">
-                                <p class="overlay"></p>
+                                <img 
+                                class="thumb-img" 
+                                srcset="./images/gift-3-1x.jpg 1x, ./images/gift-3-2x.jpg 2x"
+                                src="./images/gift-3-1x.jpg" 
+                                alt="valentine's Day" 
+                                width="270px" 
+                                height="270px"
+                                loading="lazy">
+                                <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                             <div class="card-description">
                                 <h3 class="card-title">Valentine's Day</h3>
@@ -93,8 +134,15 @@
                     <li class="gifts-item">
                         <a class="gifts-link" href="#">
                             <div class="thumb">
-                                <img class="thumb-img" src="./images/gift-4.jpg" alt="christmas" width="270px" height="270px">
-                                <p class="overlay"></p>
+                                <img 
+                                class="thumb-img" 
+                                srcset="./images/gift-4-1x.jpg 1x, ./images/gift-4-2x.jpg 2x"
+                                src="./images/gift-4-1x.jpg" 
+                                alt="christmas" 
+                                width="270px" 
+                                height="270px"
+                                loading="lazy">
+                                <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                             <div class="card-description">
                                 <h3 class="card-title">Christmas</h3>
@@ -107,100 +155,124 @@
         </section>
 
         <section class="ready">
-            <h2 class="ready-title">Ready to get started?</h2>
-            <p class="ready-text">Sign up or contact us</p>
-            <button class="ready-button-first">Find gift now</button>
-            <button class="ready-button-second">how it works</button>
+            <div class="container">
+                <div class="text">
+                    <h2 class="ready-title">Ready to get started?</h2>
+                    <p class="ready-text">Sign up or contact us</p>
+                </div>
+                <div class="buttons">
+                    <button class="ready-button-first">Find gift now</button>
+                    <button class="ready-button-second">how it works</button>   
+                </div>
+            </div>
         </section>
 
         <section class="blogs">
-            <h2 class="blogs-title">Our Best Blogs Ever</h2>
-            <p class="blogs-text">“Try our blog to find the best tips and tricks to select your gift”</p>
+            <div class="container">
+                <h2 class="blogs-title">Our Best Blogs Ever</h2>
+                <p class="blogs-text">“Try our blog to find the best tips and tricks to select your gift”</p>
 
-            <div class="blogs-content">
-                <img src="./images/blog.jpg" alt="blog" width="400px" height="370px">
-                <div class="blogs-content-description">
-                    <p class="blogs-content-description-uppertitle">Mr. John Doe</p>
-                    <h3 class="blogs-content-description-title">The best way to wish your wife</h3>
-                    <button class="blogs-content-description-button">Read More</button>
+                <div class="blogs-content">
+                    <img
+                    srcset="./images/blog-1x.jpg 1x, ./images/blog-2x.jpg 2x" 
+                    src="./images/blog-1x.jpg" 
+                    alt="blog" 
+                    width="400px" 
+                    height="370px"
+                    loading="lazy">
+                    <div class="blogs-content-description">
+                        <p class="blogs-content-description-uppertitle">Mr. John Doe</p>
+                        <h3 class="blogs-content-description-title">The best way to wish your wife</h3>
+                        <button class="blogs-content-description-button">Read More</button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="blogs-paragraphs-first">
-                <h3 class="blogs-paragraphs-title">Database to find the gifts for your girlfriend</h3>
-                <p class="blogs-paragraphs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
-                <button class="blogs-paragraphs-button">Read More</button>
-            </div>
+                <ul class="blogs-paragraphs-list">
+                    <li class="blogs-paragraphs-item">
+                        <h3 class="blogs-paragraphs-title">Database to find the gifts for your girlfriend</h3>
+                        <p class="blogs-paragraphs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                        <button class="blogs-paragraphs-button">Read More</button>
+                    </li>
 
-            <div class="blogs-paragraphs-second">
-                <h3 class="blogs-paragraphs-title">How Artificial Intelligence read your mind to find the best gift</h3>
-                <p class="blogs-paragraphs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
-                <button class="blogs-paragraphs-button">Read More</button>
+                    <li class="blogs-paragraphs-item">
+                        <h3 class="blogs-paragraphs-title">How Artificial Intelligence read your mind to find the best gift</h3>
+                        <p class="blogs-paragraphs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                        <button class="blogs-paragraphs-button">Read More</button>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="navigation">
-            <ul class="navigation-list-left">
-                <li class="navigation-item-left">
-                    <a href="./index.html" class="navigation-link">Home</a>
+    <footer class="footer">
+        <div class="container">
+            <nav class="navigation">
+                <ul class="navigation-list-left">
+                    <li class="navigation-item-left">
+                        <a href="./index.html" class="navigation-link">Home</a>
+                    </li>
+                    <li class="navigation-item-left">
+                        <a href="#" class="navigation-link">About</a>
+                    </li>
+                </ul>
+                <a class="navigation-logo" href="./index.html">logo</a>
+                <ul class="navigation-list-right">
+                    <li class="navigation-item-right">
+                        <a href="#" class="navigation-link">Service</a>
+                    </li>
+                    <li class="navigation-item-right">
+                        <a href="#" class="navigation-link">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="socials-list">
+                <li class="socials-item">
+                    <a href="#" class="socials-link">
+                        <svg class="socials-icon" width="38px" height="38px">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
                 </li>
-                <li class="navigation-item-left">
-                    <a href="#" class="navigation-link">About</a>
+                <li class="socials-item">
+                    <a href="#" class="socials-link">
+                        <svg class="socials-icon" width="38px" height="38px">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials-item">
+                    <a href="#" class="socials-link">
+                        <svg class="socials-icon" width="38px" height="38px">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials-item">
+                    <a href="#" class="socials-link">
+                        <svg class="socials-icon" width="38px" height="38px">
+                            <use href="./images/icons.svg#icon-youtube"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials-item">
+                    <a href="#" class="socials-link">
+                        <svg class="socials-icon" width="38px" height="38px">
+                            <use href="./images/icons.svg#icon-paypal"></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
-            <a class="navigation-logo" href="./index.html">logo</a>
-            <ul class="navigation-list-right">
-                <li class="navigation-item-right">
-                    <a href="#" class="navigation-link">Service</a>
+
+            <ul class="footer-text-list">
+                <li class="footer-text-item">
+                    <p>© 2010 — 2020</p>
                 </li>
-                <li class="navigation-item-right">
-                    <a href="#" class="navigation-link">Blog</a>
+                <li class="footer-text-item">
+                    <p>Privacy — Terms</p>
                 </li>
-            </ul>
+            </div>
         </div>
-
-        <ul class="socials-list">
-            <li class="socials-item">
-                <a href="#" class="socials-link">
-                    <svg class="socials-icon" width="38px" height="38px">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="socials-item">
-                <a href="#" class="socials-link">
-                    <svg class="socials-icon" width="38px" height="38px">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="socials-item">
-                <a href="#" class="socials-link">
-                    <svg class="socials-icon" width="38px" height="38px">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="socials-item">
-                <a href="#" class="socials-link">
-                    <svg class="socials-icon" width="38px" height="38px">
-                        <use href="./images/icons.svg#icon-youtube"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="socials-item">
-                <a href="#" class="socials-link">
-                    <svg class="socials-icon" width="38px" height="38px">
-                        <use href="./images/icons.svg#icon-paypal"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-
-        <p class="footer-text-right">© 2010 — 2020</p>
-        <p class="footer-text-left">Privacy — Terms</p>
     </footer>
 </body>
 </html>
